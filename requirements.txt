@@ -2,3 +2,4 @@ pandas
 scipy
 streamlit
 plotly-express
+nbformat
