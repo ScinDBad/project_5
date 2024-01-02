@@ -6,11 +6,13 @@ st.header('Vehicle Data Viewer')  # Se agrega Encabezado de la App
 
 car_data = pd.read_csv('vehicles_us.csv')  # leer los datos
 
-# crear una casilla de verificación
+# crear casillas de verificación
 build_histogram = st.checkbox('Construir un histograma')
+build_scatterplot = st.checkbox('Construir un diagrama de dispersión')
 
 if build_histogram:  # si la casilla de verificación está seleccionada
     st.write('Construir un histograma para la columna odómetro')
+    
     # crear un histograma
     fig = px.histogram(car_data, x="odometer")
 
