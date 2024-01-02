@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.header('Vehicle Data Viewer')  # Se agrega Encabezado de la App
 
-car_data = pd.read_csv('../vehicles_us.csv')  # leer los datos
+car_data = pd.read_csv('proyecto_5/vehicles_us.csv')  # leer los datos
 
 
 hist_button = st.button('Construir histograma')  # crear un botón
