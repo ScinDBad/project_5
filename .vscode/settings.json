@@ -1,0 +1,6 @@
+{
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": true,
+    "editor.defaultFoldingRangeProvider": "ms-python.autopep8",
+    "git-graph.customPullRequestProviders": []
+}
