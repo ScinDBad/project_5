@@ -17,6 +17,10 @@ if build_histogram:  # si la casilla de verificación está seleccionada
     fig = px.histogram(car_data, x="odometer",
                        title='Distribución de kilometraje individual de vehículos')
 
+    # rotulación interactiva
+    fig.update_traces(
+        hovertemplate='Kilometraje: %{x}m<br>No. Vehículos: %{y}')
+
     # cambiar el nombre de los ejes
     fig.update_layout(xaxis_title='Kilometraje',
                       yaxis_title='No. de Vehículos')
@@ -30,6 +34,10 @@ if build_scatterplot:
     # crear scatterplot
     fig = px.scatter(car_data, x="odometer", y="price", title='Relación Precio vs Kilomeraje',
                      color_discrete_sequence=['#36b366'])  # crear un gráfico de dispersión
+
+    # rotulación interactiva
+    fig.update_traces(
+        hovertemplate='Kilometraje: %{x}m<br>Precio(USD): $%{y:,.2f}')
 
     # cambiar el nombre de los ejes
     fig.update_layout(xaxis_title='Kilometraje', yaxis_title='Precio (USD)')
