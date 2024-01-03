@@ -9,6 +9,7 @@ st.header('Visualización de Datos Vehiculares')
 # Se agrega Descripción de la App Web
 st.markdown("""
 Análisis Exploratorio básico de un Concesionario de automóviles en EE.UU.
+
 Realizado por Adrián Vinueza
 """)
 
