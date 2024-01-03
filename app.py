@@ -14,7 +14,12 @@ if build_histogram:  # si la casilla de verificación está seleccionada
     st.write('Visualización de histograma de Kilometraje')
 
     # crear un histograma
-    fig = px.histogram(car_data, x="odometer")
+    fig = px.histogram(car_data, x="odometer",
+                       title='Distribución de kilometraje individual de vehículos')
+
+    # cambiar el nombre de los ejes
+    fig.update_layout(xaxis_title='Kilometraje',
+                      yaxis_title='No. de Vehículos')
 
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
@@ -23,8 +28,11 @@ if build_scatterplot:
     st.write('Visualización de diagrama de dispersión de precio vs kilometraje')
 
     # crear scatterplot
-    fig = px.scatter(car_data, x="odometer", y='price',
-                     title='Relación entre precio y kilometraje')
+    fig = px.scatter(car_data, x="odometer", y="price", title='Relación Precio vs Kilomeraje',
+                     color_discrete_sequence=['#36b381'])  # crear un gráfico de dispersión
+
+    # cambiar el nombre de los ejes
+    fig.update_layout(xaxis_title='Kilometraje', yaxis_title='Precio (USD)')
 
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
