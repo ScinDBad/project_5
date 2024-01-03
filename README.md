@@ -21,7 +21,7 @@ Los gráficos de barras permiten al usuario visualizar la cantidad de vehículos
 ### Repo GitHub 
 https://github.com/ScinDBad/proyecto_5.git
 
-### Render app
+### Web app
 https://vehicle-lecture.onrender.com
 
 v.2.0 - Aplicación web completa y funcional
