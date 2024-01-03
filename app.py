@@ -29,7 +29,7 @@ if build_scatterplot:
 
     # crear scatterplot
     fig = px.scatter(car_data, x="odometer", y="price", title='Relación Precio vs Kilomeraje',
-                     color_discrete_sequence=['#36b381'])  # crear un gráfico de dispersión
+                     color_discrete_sequence=['#36b366'])  # crear un gráfico de dispersión
 
     # cambiar el nombre de los ejes
     fig.update_layout(xaxis_title='Kilometraje', yaxis_title='Precio (USD)')
