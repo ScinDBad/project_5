@@ -3,7 +3,9 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-st.header('Datos Vehiculares y Ventas')  # Se agrega Encabezado de la App
+# Se agrega Encabezado de la App
+st.header('Análisis Exploratorio de Datos Vehiculares')
+st.subheader('Realizado por Adrián Vinueza')
 
 car_data = pd.read_csv('vehicles_us.csv')  # leer los datos
 
