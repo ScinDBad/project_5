@@ -3,19 +3,17 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-"""
-# Datos Vehiculares y Ventas
-
-Esta aplicación realiza un análisis y visualización de datos relacionados con vehículos y ventas.
-
-## Subtítulo
-
-Aquí puedes agregar información adicional sobre la aplicación.
-"""
-
 # Se agrega Encabezado de la App
-st.header('Análisis Exploratorio de Datos Vehiculares')
-st.subheader('Realizado por Adrián Vinueza')
+st.header('Visualización de Datos Vehiculares')
+
+# Se agrega Descripción de la App Web
+st.markdown("""
+Análisis Exploratorio básico de un Concesionario de automóviles en EE.UU.
+Realizado por Adrián Vinueza
+""")
+
+# Se agrega subtítulo de la App Web
+st.subheader('Seleccionar gráfico')
 
 car_data = pd.read_csv('vehicles_us.csv')  # leer los datos
 
